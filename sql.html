@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GetFree Sql....</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="search.css">
+    </head>
+    <body> 
+        <div class="header">
+            <div class="logohead">
+               <a href="index.html"><img class="logo" src="./123.png"></a> 
+            </div>
+            <div class="container">
+                <p class="tags">
+                    <a href="basic.html" class="tag">BASIC</a> 
+                    <a href="dql.html" class="tag">DQL</a>  
+                    <a href="ddl.html" class="tag">DDL</a>  
+                    <a href="dml.html" class="tag active">DML</a>  
+                    <a href="dcl.html" class="tag">DCL</a>  
+                    <a href="tcl.html" class="tag">TCL</a>
+                    <a href="practics.html" class="tag">Practics</a>    
+                  </p>
+                
+              </div>
+        </div>
+        <div>
+            <div class="heading">
+            <h1>SQL TUTORIALS</h1>
+            <h2>Data Definition language :</h2>
+            </div>
+            <div class="topics">
+                    Data Definition language (DDL) is used to create, Rename, drop the columns or tables.If we want to create a table we need to learn about two things mainly: <br> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                  
+                    1. DATA TYPES: It decides which type of data has to be stored in columns. They are 3 types of data types:<br> <br>
+                    <table border="2px solid" rules="all" class="table">
+                        <tr>
+                            <th>DATATYPE</tdh>
+                            <th>DESCRIPTION</th>
+                        </tr>
+                        <tr>
+                            <td>Number ()</td>
+                            <td>Whenever we are setting the data type as Number, it is always numerical in nature.</td>
+                        </tr>
+                        <tr>
+                            <td>char ()</td>
+                            <td>whenever we are setting the datatype as character, it should be always Alphabetical in nature.It is present in the old version of the database.</td>
+                        </tr>
+                        <tr>
+                            <td>varchar()</td>
+                            <td> We are using varchar2() function for the latest version and it accepts both numerical and alphabetical values.</td>
+                        </tr>
+                    </table>
+                    <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    2.CONSTRAINTS: Constraints are the conditions the columns have to flow while taking the records as input. They are two main constraints: <br><br>
+
+                    <table border="2px solid" rules="all" class="table">
+                        <tr>
+                            <th>KEYTYPE</tdh>
+                            <th>DESCRIPTION</th>
+                        </tr>
+                        <tr>
+                            <td>UNIQUE KEY</td>
+                            <td>It doesn't allow duplicate values, but it allows null values</td>
+                        </tr>
+                        <tr>
+                            <td>NOT NULL KEY</td>
+                            <td> It doesn't allow null values, but it allows duplicate values</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <h3 class="heading1">Syntax for creating a table:
+                    </h3>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SQL> create table table name <br>
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Column name1 datatype(size) Constrains,<br>
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspColumn name2 datatype(size) Constrains,<br>
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspColumn name3 datatype(size) Constrains............); <br> 
+                    <br>
+                    <b> NOTE:</b> Here 'SIZE' represents a number of characters. <br>
+                    <br>
+                   <mark> &nbsp;&nbsp;&nbsp;Qurey for crating a table &nbsp;&nbsp;&nbsp;</mark> <br> <br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SQL> create table std
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( sno number (5) unique,
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sname char (5) not null,
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;course char (5) not null );
+                    <br> <br><br>
+                    <b> Qureies on created table</b> <br>
+                    <img src="./ddlq.png" alt="">
+                    <h3 class="heading1">Syntax for Renaming a table:
+                    </h3>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SQL> Rename old table name to new table name;
+                    <br> <br>
+                    <mark> &nbsp;&nbsp;&nbsp;Qurey for renaming a table &nbsp;&nbsp;&nbsp;</mark> <br>  <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SQL>    rename std to sep ;<br> <br>
+                    <b> Qureies on renamed table</b> <br>
+                    <img src="./ddlq2.png" alt="">
+                    <h3 class="heading1">Syntax for droping a table:
+                    </h3>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SQL> drop table table name;
+                    <br><br>
+                    <mark> &nbsp;&nbsp;&nbsp;Qurey for droping a table &nbsp;&nbsp;&nbsp;</mark> <br> <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SQL>    drop table qsp ;<br> <br>
+                    <b> Qurey to dispaly all tablenames on database</b> <br>
+                    <img src="./ddq3.png" alt="">
+                    <br><br><br><br><br><br><br>
+           </div>
+        </div>
+    </body>
+</html>

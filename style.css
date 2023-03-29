@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+*{
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+body {
+    background-color: rgb(248.248,248);
+    display: block;
+    margin: 0px;
+    padding-top: 80px;
+    padding-left: 95px;
+    padding-right: 30px;
+}
+.header{
+    background-color: #fff;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    height: 115px;
+    justify-content: space-between;
+    align-items: center;
+    border-color:rgb(228, 228, 228);
+    border-width:1px ;
+    border-bottom-style:solid ;
+    z-index: 100;
+}
+.topics{
+    font-size: 20px;
+    font-family:  Georgia, Times, 'Times New Roman', serif;
+}
+.heading{
+    margin-top:70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.heading1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+b{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+}
+#ddl{
+    background-color: red;
+    width: 1267px;
+    height: 1000px;
+    margin-top: 35px; 
+    margin-left: 100px; 
+}
+.sidebarhome{
+    background-color:white;
+    
+    left: 0;
+    top: 55px;
+    bottom: 0;
+    width: 1500px;
+    border-color: rgb(228, 228, 228);
+    border-width:1px ;
+    border-right-style:solid ;
+    margin-top:70px;   
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:80px;
+    margin-top:5px;
+    cursor: pointer;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+.table{
+    margin-left: 100px;
+}
+th, td {
+    padding: 15px;
+    font-size: 20px;
+}
+.sidebar:hover{
+    background-color:lightgrey;
+}
+.logohead{
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+.home {
+    width: 25px;
+    margin-left:24px;
+    margin-right: 24px;
+    padding: 10px 0;
+}
+ .upload-btn, .apps-btn, .notification-btn, .profile-btn{
+     width: 25px;
+     padding: 20px 0;
+ }
+ .mic{
+     width: 25px;
+     padding-left: 5px;
+ }
+ .search{
+  margin-left: 640px;
+  align-items: right;
+  max-width: 800px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-width:1px ;
+  border-style:solid ;
+  border-color: gray;
+  flex: 1;
+  height: 34px;
+  font-size: 15px;
+  padding-left:10px ;
+  border-radius:4px;
+ }
+ .search::placeholder{
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 15px;
+ }
+.search-btn{
+    padding-left: 5px;
+    width: 30px;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-right:35px;
+    max-width: 500;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+
+}
+.logo{
+    margin-left: 70px;
+    width: 250px;
+}
+p{
+    font-family: robot,arial;
+}
+.thumbnails{
+    position: relative;
+     width:100%;
+ }
+ .time{
+     color: #fff;
+     background-color: black;
+     position: absolute;
+     bottom: 15px;
+     right: 15px;
+ }
+ .like{
+     position: relative;
+ }
+ p{
+     margin-bottom:0px ;
+ }
+
+.title{
+    font-size: 15px;
+    font-weight:600;
+    margin-top:8px ;
+    width: 90%
+}
+.channel , .info{
+    margin-top: 8px;
+    color:rgb(96,96,96);
+    font-size: 13px;
+}
+.video{
+    width: 100%;
+}
+.dp{
+    width: 35px;
+}
+.vardp{
+    margin-top:8px ;
+}
+.varinfo{
+    display: inline-block;
+}
+.totalinfo{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 33px;
+}
+.upload-btn{
+   padding-right:20px ;
+}
+ .apps-btn{
+   padding-right:20px ;
+ }
+ .notification-btn{
+    padding-right:20px ;
+ }
+.profile-btn{
+         padding-right:30px ;
+         border-radius: 20%;
+} 
+.home-text{
+    font-family: roboto,arial;
+    font-size: 11px;
+}
+
+button{
+    cursor: pointer;
+    padding: 15px 25px;
+    border-radius: 50px;
+    border-color: #4a998f;
+    color: white;
+    background-color:#2e7a93;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 25px;
+}
